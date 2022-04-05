@@ -13,5 +13,10 @@ namespace Web_ArtGallery
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lblMsg.Text = "Welcom success the create acount";
+        }
     }
 }
