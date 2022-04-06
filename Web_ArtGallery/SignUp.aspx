@@ -10,8 +10,8 @@
         conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|ArtGallery.mdf;Integrated Security=True";
 
         //2-create insert statment
-       // String strInert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','txtFname.Text','txtLname.Text','rblGender.SelectedValue','txtEmail.Text','txtPhone.Text','ddlCountry.SelectedValue','txtUsename.Text','txtPass.Text ')");
-        string strInert="INSERT INTO Member"+
+       // string strInsert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','txtFname.Text','txtLname.Text',rblGender.SelectedValue','txtEmail.Text','txtPhone.Text','ddlCountry.SelectedValue','txtUsename.Text','txtPass.Text' )");
+        string strInsert="INSERT INTO Member"+
             "VALUES('"+txtFname.Text+"','"
             + txtLname.Text + "','"
             + rblGender.SelectedValue + "','"
@@ -22,7 +22,7 @@
             + txtPass.Text + "')";
 
         //3-create SQL command
-        SqlCommand cmdInsert = new SqlCommand(strInert, conn);
+        SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
         //4-open database
         conn.Open();
