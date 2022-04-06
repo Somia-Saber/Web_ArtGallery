@@ -1,12 +1,40 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Web_ArtGallery.SignUp" %>
-
+<%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html>
 <script runat="server">
 
-     protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            lblMsg.Text = "Welcom success the create acount";
-        }
+    protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        //1-Create connection object
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|ArtGallery.mdf;Integrated Security=True";
+
+        //2-create insert statment
+       // String strInert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','txtFname.Text','txtLname.Text','rblGender.SelectedValue','txtEmail.Text','txtPhone.Text','ddlCountry.SelectedValue','txtUsename.Text','txtPass.Text ')");
+        string strInert="INSERT INTO Member"+
+            "VALUES('"+txtFname.Text+"','"
+            + txtLname.Text + "','"
+            + rblGender.SelectedValue + "','"
+            + txtEmail.Text + "','"
+            + txtPhone.Text + "','"
+            + ddlCountry.SelectedValue + "','"
+            + txtUsename.Text + "','"
+            + txtPass.Text + "')";
+
+        //3-create SQL command
+        SqlCommand cmdInsert = new SqlCommand(strInert, conn);
+
+        //4-open database
+        conn.Open();
+
+        //5-execute the sql command
+        cmdInsert.ExecuteNonQuery();
+
+        //6-close database
+        conn.Close();
+
+        lblMsg.Text = "Welcom success the create acount";
+    }
 </script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -78,7 +106,7 @@
     <form id="form1" runat="server">
         <asp:Label ID="label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Monotype Corsiva" Font-Size="X-Large" ForeColor="#660066" Text="To Sign Up, Fill In all the Following Fields, Then Click Submit"></asp:Label>
         <br />
-        <table class="auto-style1" style="background-color: #FFCCFF">
+        <table class="auto-style1" style="border: thick double #CC0099; background-color: #FFCCFF">
             <tr>
                 <td class="auto-style3">
                     <asp:Label ID="Fname" runat="server" BorderStyle="None" Font-Italic="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#CC0099" Text="First Name:" Width="137px"></asp:Label>
@@ -192,7 +220,8 @@
             </tr>
             <tr>
                 <td class="auto-style7">
-                    <asp:Button ID="btnSubmit" runat="server" BorderStyle="Solid" Font-Bold="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#660033" OnClick="btnSubmit_Click" Text="Submit" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnSubmit" runat="server" BorderStyle="Solid" Font-Bold="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#660033" OnClick="btnSubmit_Click" Text="Submit" Height="51px" Width="115px" />
                 </td>
                 <td class="auto-style8"></td>
                 <td class="auto-style12"></td>
@@ -204,10 +233,10 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3"></td>
+                <td class="auto-style5"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style4"></td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
