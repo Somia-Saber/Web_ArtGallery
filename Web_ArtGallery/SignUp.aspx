@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Web_ArtGallery.SignUp" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
+ using System.Data.SqlClient;
+
 <!DOCTYPE html>
 <script runat="server">
 
@@ -10,8 +12,10 @@
         conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|ArtGallery.mdf;Integrated Security=True";
 
         //2-create insert statment
-       // string strInsert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','txtFname.Text','txtLname.Text',rblGender.SelectedValue','txtEmail.Text','txtPhone.Text','ddlCountry.SelectedValue','txtUsename.Text','txtPass.Text' )");
-        string strInsert="INSERT INTO Member"+
+       // string strInsert = String.Format("INSERT INTO Member VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", txtFname.Text, txtLname.Text, rblGender.SelectedValue, txtEmail.Text, txtPhone.Text, ddlCountry.SelectedValue, txtUsename.Text, txtPass.Text);
+
+        string strInsert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",txtFname.Text,txtLname.Text,rblGender.SelectedValue,txtEmail.Text,txtPhone.Text,ddlCountry.SelectedValue,txtUsename.Text,txtPass.Text);
+       /* string strInsert="INSERT INTO Member"+
             "VALUES('"+txtFname.Text+"','"
             + txtLname.Text + "','"
             + rblGender.SelectedValue + "','"
@@ -19,7 +23,7 @@
             + txtPhone.Text + "','"
             + ddlCountry.SelectedValue + "','"
             + txtUsename.Text + "','"
-            + txtPass.Text + "')";
+            + txtPass.Text + "')";*/
 
         //3-create SQL command
         SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
@@ -33,7 +37,7 @@
         //6-close database
         conn.Close();
 
-        lblMsg.Text = "Welcom success the create acount";
+            lblMsg.Text = "Welcome " + txtFname.Text + ", Your Account has been Successfully Created!!";
     }
 </script>
 <html xmlns="http://www.w3.org/1999/xhtml">
