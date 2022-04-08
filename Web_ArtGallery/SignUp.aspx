@@ -24,6 +24,7 @@
             + ddlCountry.SelectedValue + "','"
             + txtUsename.Text + "','"
             + txtPass.Text + "')";*/
+       /////////////////////////////////////////////////////////////////////////
 
         //3-create SQL command
         SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
