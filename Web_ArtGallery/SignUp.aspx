@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Web_ArtGallery.SignUp" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
- using System.Data.SqlClient;
 
 <!DOCTYPE html>
 <script runat="server">
@@ -65,26 +64,11 @@
         .auto-style6 {
             width: 238px;
         }
-        .auto-style7 {
-            width: 137px;
-            height: 40px;
-        }
-        .auto-style8 {
-            width: 238px;
-            height: 40px;
-        }
-        .auto-style9 {
-            height: 40px;
-        }
         .auto-style10 {
             height: 26px;
             width: 273px;
         }
         .auto-style11 {
-            width: 273px;
-        }
-        .auto-style12 {
-            height: 40px;
             width: 273px;
         }
         .auto-style13 {
@@ -104,6 +88,36 @@
         }
         .auto-style17 {
             height: 32px;
+        }
+        .auto-style18 {
+            width: 137px;
+            height: 35px;
+        }
+        .auto-style19 {
+            width: 238px;
+            height: 35px;
+        }
+        .auto-style20 {
+            width: 273px;
+            height: 35px;
+        }
+        .auto-style21 {
+            height: 35px;
+        }
+        .auto-style22 {
+            width: 137px;
+            height: 8px;
+        }
+        .auto-style23 {
+            height: 8px;
+            width: 238px;
+        }
+        .auto-style24 {
+            height: 8px;
+            width: 273px;
+        }
+        .auto-style25 {
+            height: 8px;
         }
     </style>
 </head>
@@ -218,19 +232,20 @@
                 <td class="auto-style4"></td>
             </tr>
             <tr>
-                <td class="auto-style3"></td>
-                <td class="auto-style5"></td>
-                <td class="auto-style10"></td>
-                <td class="auto-style4"></td>
-            </tr>
-            <tr>
-                <td class="auto-style7">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style18">
                     <asp:Button ID="btnSubmit" runat="server" BorderStyle="Solid" Font-Bold="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#660033" OnClick="btnSubmit_Click" Text="Submit" Height="51px" Width="115px" />
                 </td>
-                <td class="auto-style8"></td>
-                <td class="auto-style12"></td>
-                <td class="auto-style9"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style20"></td>
+                <td class="auto-style21"></td>
+            </tr>
+            <tr>
+                <td class="auto-style22">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                <td class="auto-style23"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style25"></td>
             </tr>
             <tr>
                 <td class="auto-style17" colspan="4">
@@ -250,10 +265,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style2"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style11"></td>
+                <td></td>
             </tr>
         </table>
     </form>
