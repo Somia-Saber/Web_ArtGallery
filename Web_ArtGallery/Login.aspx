@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Web_ArtGallery.Login" %>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Family</title>
@@ -231,21 +229,23 @@
             cursor: pointer;
         }
         .auto-style1 {
-            height: 390px;
+            margin-left: 0px;
+            margin-right: 155px;
+            margin-top: 0px;
         }
         .auto-style2 {
-            height: 37px;
+            width: 401px;
         }
     </style>
 </head>
 
-<body style="height: 457px">
+<body>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a>
-            <li><a href="familylist.html">List</a> </li>
-            <li><a href="new_family.html">New </a></li>
+            <li><a href="Home.html">Home</a>
+            <li><a href="SignUp.aspx">SignUp</a> </li>
+            <li><a href="Login1.aspx">Login </a></li>
             <li class="nav-right"><a href="login.html" class="active">Login</a></li>
 
 
@@ -254,32 +254,34 @@
 
         <hr>
         <nav>
-            <body style="height: 457px">
+            <body>
 
 
-                <form class="auto-style1">
+                <form id="form1" runat="server">
 
                     <table class="done">
-                        <tr><td><p class="toz">Art Gallery</p></td></tr>
+                        <tr><td class="auto-style2"><p class="toz">Art Gallery</p></td></tr>
+                        <tr>
+                            <td class="auto-style2">&nbsp;<asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style1" placeholder="Email address" Width="337px" Height="32px"></asp:TextBox>
+                            </td>
+                        </tr>
                         <tr>
                             <td class="auto-style2">
-                                
-                            <asp:TextBox ID="TextBox1" TextMode="Email" CssClass="font" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-                                <input class="font" type="email" name="email" placeholder="Email address"> </td>
+                                <asp:TextBox ID="TextBox2" runat="server" Height="32px" CssClass="auto-style1" placeholder=" password" Width="337px"></asp:TextBox>
+                            </td>
                         </tr>
                         <tr>
-                            <td><input class="font" type="password" name="password" placeholder=" password"></td>
-                        </tr>
-                        <tr>
-                            <td><button class="text" type="submit"><a href="index.html">Login</a></button></td>
+                            <td>
+                                <asp:Button  ID="Button1"  CssClass="text" runat="server" Text="Button" /><a href="index.html">Login</a>
+                            </td>
 
                         </tr>
                         <tr>
 
-                            <td id="best"><a href="forgptten.html">Forrgotten password?</a></td>
+                            <td id="best" class="auto-style2"><a href="forgptten.html">Forrgotten password?</a></td>
                         </tr>
                         <tr>
-                            <td><button class="bad" type="submit"><a href="new_family.html">Create New Account</a></button> </td>
+                            <td class="auto-style2"><button class="bad" type="submit"><a href="new_family.html">Create New Account</a></button> </td>
 
                         </tr>
                     </table>
