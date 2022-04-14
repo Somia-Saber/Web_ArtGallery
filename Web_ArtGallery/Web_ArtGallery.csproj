@@ -71,6 +71,8 @@
     <Content Include="App_Data\ArtGallery_log.ldf">
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
+    <Content Include="Home.html" />
+    <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Login.html" />
     <Content Include="Login1.aspx" />
