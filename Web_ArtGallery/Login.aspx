@@ -272,7 +272,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:Button  ID="Button1"  CssClass="text" runat="server" Text="Button" /><a href="index.html">Login</a>
+                                <asp:Button  ID="Button1"  CssClass="text" runat="server" Text="Login" /><a href="index.html">Login</a>
                             </td>
 
                         </tr>
@@ -281,7 +281,9 @@
                             <td id="best" class="auto-style2"><a href="forgptten.html">Forrgotten password?</a></td>
                         </tr>
                         <tr>
-                            <td class="auto-style2"><button class="bad" type="submit"><a href="new_family.html">Create New Account</a></button> </td>
+                            <td class="auto-style2">
+                                <asp:Button ID="Button2" runat="server" CssClass="bad" Text="Create New Account" />
+                            </td>
 
                         </tr>
                     </table>
