@@ -233,6 +233,9 @@
         .auto-style1 {
             height: 390px;
         }
+        .auto-style2 {
+            height: 37px;
+        }
     </style>
 </head>
 
@@ -259,7 +262,10 @@
                     <table class="done">
                         <tr><td><p class="toz">Art Gallery</p></td></tr>
                         <tr>
-                            <td><input class="font" type="email" name="email" placeholder="Email address"> </td>
+                            <td class="auto-style2">
+                                
+                            <asp:TextBox ID="TextBox1" TextMode="Email" CssClass="font" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                                <input class="font" type="email" name="email" placeholder="Email address"> </td>
                         </tr>
                         <tr>
                             <td><input class="font" type="password" name="password" placeholder=" password"></td>

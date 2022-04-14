@@ -54,7 +54,7 @@
             <tr>
                 <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label2" runat="server" Font-Italic="True" Font-Names="Arial" ForeColor="#FF33CC" Text="Email address:"></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style3" Height="37px" Width="326px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style3" Height="37px" OnTextChanged="TextBox1_TextChanged" Width="326px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
