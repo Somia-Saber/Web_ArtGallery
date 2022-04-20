@@ -12,19 +12,19 @@
         conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|ArtGallery.mdf;Integrated Security=True";
 
         //2-create insert statment
-       // string strInsert = String.Format("INSERT INTO Member VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", txtFname.Text, txtLname.Text, rblGender.SelectedValue, txtEmail.Text, txtPhone.Text, ddlCountry.SelectedValue, txtUsename.Text, txtPass.Text);
+        // string strInsert = String.Format("INSERT INTO Member VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", txtFname.Text, txtLname.Text, rblGender.SelectedValue, txtEmail.Text, txtPhone.Text, ddlCountry.SelectedValue, txtUsename.Text, txtPass.Text);
 
         string strInsert = String.Format("INSERT INTO Member VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",txtFname.Text,txtLname.Text,rblGender.SelectedValue,txtEmail.Text,txtPhone.Text,ddlCountry.SelectedValue,txtUsename.Text,txtPass.Text);
-       /* string strInsert="INSERT INTO Member"+
-            "VALUES('"+txtFname.Text+"','"
-            + txtLname.Text + "','"
-            + rblGender.SelectedValue + "','"
-            + txtEmail.Text + "','"
-            + txtPhone.Text + "','"
-            + ddlCountry.SelectedValue + "','"
-            + txtUsename.Text + "','"
-            + txtPass.Text + "')";*/
-       /////////////////////////////////////////////////////////////////////////
+        /* string strInsert="INSERT INTO Member"+
+             "VALUES('"+txtFname.Text+"','"
+             + txtLname.Text + "','"
+             + rblGender.SelectedValue + "','"
+             + txtEmail.Text + "','"
+             + txtPhone.Text + "','"
+             + ddlCountry.SelectedValue + "','"
+             + txtUsename.Text + "','"
+             + txtPass.Text + "')";*/
+        /////////////////////////////////////////////////////////////////////////
 
         //3-create SQL command
         SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
@@ -38,7 +38,10 @@
         //6-close database
         conn.Close();
 
-            lblMsg.Text = "Welcome " + txtFname.Text + ", Your Account has been Successfully Created!!";
+        lblMsg.Text = "Welcome " + txtFname.Text + ", Your Account has been Successfully Created!!";
+        //7-save user profile picture
+        if (fupPic.HasFile)
+            fupPic.SaveAs(Server.MapPath("UserPic") + "\\" + txtUsename.Text + "jpg");
     }
 </script>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -255,8 +258,12 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3"></td>
-                <td class="auto-style5"></td>
+                <td class="auto-style3">
+                    <asp:Label ID="ConfirmPass0" runat="server" BorderStyle="None" Font-Italic="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#CC0099" Text="Upload Profile Pic:" Width="192px" Height="28px"></asp:Label>
+                </td>
+                <td class="auto-style5">
+                    <asp:FileUpload ID="fupPic" runat="server" Height="31px" />
+                </td>
                 <td class="auto-style10"></td>
                 <td class="auto-style4"></td>
             </tr>
