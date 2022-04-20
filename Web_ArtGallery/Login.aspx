@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Family</title>
+    <title>Art Gallery</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style >
         h1 {
@@ -262,18 +262,17 @@
                     <table class="done">
                         <tr><td class="auto-style2"><p class="toz">Art Gallery</p></td></tr>
                         <tr>
-                            <td class="auto-style2">&nbsp;<asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style1" placeholder="Email address" Width="337px" Height="32px"></asp:TextBox>
+                            <td class="auto-style2">&nbsp;<asp:TextBox ID="txtEmail" runat="server" CssClass="auto-style1" placeholder="Email address" Width="337px" Height="32px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style2">
-                                <asp:TextBox ID="TextBox2" runat="server" Height="32px" CssClass="auto-style1" placeholder=" password" Width="337px"></asp:TextBox>
+                                <asp:TextBox ID="txtPass" runat="server" Height="32px" CssClass="auto-style1" placeholder=" password" Width="337px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <asp:Button  ID="Button1"  CssClass="text" runat="server" Text="Login" /><a href="index.html">Login</a>
-                            </td>
+                            <td class="auto-style2">
+                                <asp:Button  ID="btnLogin"  CssClass="text" runat="server" Text="Login" PostBackUrl="~/index.html" />&nbsp;</td>
 
                         </tr>
                         <tr>
@@ -282,7 +281,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style2">
-                                <asp:Button ID="Button2" runat="server" CssClass="bad" Text="Create New Account" />
+                                <asp:Button ID="btnAccount" runat="server" CssClass="bad" Text="Create New Account" />
                             </td>
 
                         </tr>

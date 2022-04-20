@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Web_ArtGallery.SignUp" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
 
+
 <!DOCTYPE html>
 <script runat="server">
 
@@ -131,10 +132,14 @@
                     <asp:Label ID="Fname" runat="server" BorderStyle="None" Font-Italic="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#CC0099" Text="First Name:" Width="137px"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txtFname" runat="server" Height="26px" Width="228px"></asp:TextBox>
+                    <asp:TextBox ID="txtFname" runat="server" Height="26px" Width="228px" placeholder=" Ex:Somia or Abd Alrahman"></asp:TextBox>
                 </td>
-                <td class="auto-style10"></td>
-                <td class="auto-style4"></td>
+                <td class="auto-style10">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFname" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style4">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtFname" ErrorMessage="Invalid Format" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="([A-Z][a-z]*\s[A-Z][a-z]*)|([A-z][a-z]*)"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -143,8 +148,12 @@
                 <td class="auto-style6">
                     <asp:TextBox ID="txtLname" runat="server" Height="26px" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtLname" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtLname" ErrorMessage="Invalid Format" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="([A-Z][a-z]*\s[A-Z][a-z]*)|([A-z][a-z]*)"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -166,7 +175,9 @@
                 <td class="auto-style6">
                     <asp:TextBox ID="txtEmail" runat="server" Height="26px" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style11">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtEmail" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -176,7 +187,9 @@
                 <td class="auto-style6">
                     <asp:TextBox ID="txtPhone" runat="server" Height="26px" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style11">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtPhone" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -196,14 +209,16 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">
+                <td class="auto-style13">
                     <asp:Label ID="UserName" runat="server" BorderStyle="None" Font-Italic="True" Font-Names="Arial" Font-Size="Medium" ForeColor="#CC0099" Text="UserName:" Width="137px"></asp:Label>
                 </td>
-                <td class="auto-style6">
+                <td class="auto-style14">
                     <asp:TextBox ID="txtUsename" runat="server" Height="26px" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style15">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtUsename" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -212,8 +227,12 @@
                 <td class="auto-style6">
                     <asp:TextBox ID="txtPass" runat="server" Height="26px" TextMode="Password" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtPass" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtPass" ErrorMessage="RegularExpressionValidator" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,15}$"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style13">
@@ -222,7 +241,9 @@
                 <td class="auto-style14">
                     <asp:TextBox ID="txtConfirmPass" runat="server" Height="26px" TextMode="Password" Width="228px"></asp:TextBox>
                 </td>
-                <td class="auto-style15"></td>
+                <td class="auto-style15">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtConfirmPass" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style16"></td>
             </tr>
             <tr>
@@ -272,5 +293,6 @@
             </tr>
         </table>
     </form>
+
 </body>
 </html>
