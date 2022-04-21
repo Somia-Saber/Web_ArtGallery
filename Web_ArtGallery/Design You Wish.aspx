@@ -1,9 +1,12 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title>Family</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style >
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Web_ArtGallery.index" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!DOCTYPE html>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
         h1 {
             text-align: center;
             color: deeppink;
@@ -87,45 +90,9 @@
             color: white;
         }
 
-        div:not(.searchbar) {
-            border: 3px deeppink;
-            border-radius: 15px;
-            box-shadow: 5px 5px 0px pink;
-        }
-
-        .searchbar {
-            width: 35%;
-            padding: 0px;
-            margin: 0px 0px 8px 8px;
-            border-radius: 15px;
-            border: 1px;
-            border-style: solid;
-            border-color: rgb(255, 119, 214);
-        }
-
-            .searchbar:hover {
-                box-shadow: 5px 3px 5px rgb(255, 81, 110);
-            }
-
-        .searchbox {
-            padding: 9px 9px;
-            margin: 0px 2px;
-            width: 100%;
-            border: none;
-            outline: none;
-            border-radius: 15px;
-        }
-
-        table#fam {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        tr {
-            text-align: center;
-            font-size: 25px;
-        }
-
+        
+            
+          
         thead {
             background-color: deeppink;
             color: rgb(255, 255, 255);
@@ -228,58 +195,36 @@
             height: 20px;
             cursor: pointer;
         }
+        .auto-style1 {
+            margin-left: 55px;
+            margin-right: 1px;
+            margin-top: 112px;
+        }
+        .auto-style2 {
+            margin-top: 0px;
+        }
     </style>
 </head>
-
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="Home.aspx">Home</a>
-            <li><a href="SignUp.aspx">SignUp</a> </li>
-            <li><a href="Nature Paintings.aspx">Nature Paintings </a></li>
-            <li><a href=" Gradual Art Murals.aspx"> Gradual Art Murals </a></li>
-            <li><a href=" Eslamic Paintings.aspx"> Eslamic Paintings </a></li>
-            <li><a href="Design You Wish.aspx"> Design You Wish </a></li>
-            <li class="nav-right"><a href="login.html" class="active">Login</a></li>
-
-
-        </ul>
+    <form id="form1" runat="server">
+    <ul>
+        <li><a href="Home.aspx">Home</a>
+        <li><a href="SignUp.aspx">SignUp</a> </li>
+        <li><a href="Nature Paintings.aspx">Nature Paintings </a></li>
+        <li><a href=" Gradual Art Murals.aspx"> Gradual Art Murals </a></li>
+        <li><a href=" Eslamic Paintings.aspx"> Eslamic Paintings </a></li>
+        <li><a href="Design You Wish.aspx"> Design You Wish </a></li>
+        <li><a href="FeadBack.aspx">FeadBack</a></li>
 
 
-        <hr>
-        <nav>
-            <body>
+       
+        <li class="nav-right"><a href="login.aspx" class="active">Login</a></li>
 
+    </ul>
+         <asp:Label ID="Label1" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#660033" Text="Description :"></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style2" Height="140px"></asp:TextBox>
+        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="auto-style1" ForeColor="#CC0066" Height="57px" />
+         </form>
 
-                <form>
-
-                    <table class="done">
-                        <tr><td><p class="toz">Art Gallery</p></td></tr>
-                        <tr>
-                            <td><input class="font" type="email" name="email" placeholder="Email address"> </td>
-                        </tr>
-                        <tr>
-                            <td><input class="font" type="password" name="password" placeholder=" password"></td>
-                        </tr>
-                        <tr>
-                            <td><button class="text" type="submit"><a href="index.html">Login</a></button></td>
-
-                        </tr>
-                        <tr>
-
-                            <td id="best"><a href="forgptten.html">Forrgotten password?</a></td>
-                        </tr>
-                        <tr>
-                            <td><button class="bad" type="submit"><a href="new_family.html">Create New Account</a></button> </td>
-
-                        </tr>
-                    </table>
-
-                </form>
-
-
-            </body>
-
-            </head>
+</body>
 </html>

@@ -215,24 +215,21 @@
             margin-left: 52px;
             margin-top: 0px;
         }
-        .auto-style6 {
-            margin-left: 145px;
-        }
-        .auto-style7 {
-            margin-left: 116px;
-        }
-        .auto-style9 {
-            margin-left: 127px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <ul>
         <li><a href="Home.aspx">Home</a>
         <li><a href="SignUp.aspx">SignUp</a> </li>
-        <li><a href="Login1.aspx">Login </a></li>
-        <li class="nav-right"><a href="login.html" class="active">Login</a></li>
+        <li><a href="Nature Paintings.aspx">Nature Paintings </a></li>
+         <li><a href=" Gradual Art Murals.aspx"> Gradual Art Murals </a></li>
+         <li><a href=" Eslamic Paintings.aspx"> Eslamic Paintings </a></li>
+         <li><a href="Design You Wish.aspx"> Design You Wish </a></li>
+         <li><a href="FeadBack.aspx">FeadBack</a></li>
+
+        
+        <li class="nav-right"><a href="login.aspx" class="active">Login</a></li>
 
     </ul>
        <div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><div data-v-1fa55048="" class="container-fluid main-menu"><!----> <!----> <!----> <div data-v-1fa55048="" class="col-md-12 announcement-bar-new" style="background-color: rgb(255, 207, 62); color: rgb(28, 131, 113);"><div class="announcement-bar-text"><span>
@@ -289,29 +286,24 @@
                     
                 </p>
         <p>
-            &nbsp;</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Large" ForeColor="#660033" Text="◈ Choose the look of your board ◈"></asp:Label>
+        </p>
         <p>
                 <asp:Image ID="Image1" runat="server" CssClass="auto-style1" Height="194px" ImageUrl="Image1.jpeg" Width="185px" />
                 <asp:Image ID="Image3" runat="server" CssClass="auto-style5" Height="194px" ImageUrl="Image4.jpeg" Width="178px" />
                 <asp:Image ID="Image4" runat="server" CssClass="auto-style5" Height="194px" ImageUrl="Image3.jpeg" Width="178px" />
                 <asp:Image ID="Image5" runat="server" CssClass="auto-style5" Height="194px" ImageUrl="Image66.jpeg" Width="178px" />
                 <asp:Image ID="Image6" runat="server" CssClass="auto-style5" Height="194px" ImageUrl="Image6.jpeg" Width="178px" />
-                <asp:Image ID="Image7" runat="server" CssClass="auto-style5" Height="194px" ImageUrl="Image44.jpeg" Width="178px" />
+                <asp:Image ID="Image7" runat="server" CssClass="auto-style5" Height="192px" ImageUrl="Image44.jpeg" Width="191px" />
                 </p>
+   
+       
+       
+
+   
         <p>
-            Desgin you wish</p>
-        <p>
-            <asp:Button ID="Button1" runat="server" Text="Add to cart" />
-        &nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Text="Add to cart" CssClass="auto-style6" OnClick="Button2_Click" />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" Text="Add to cart" CssClass="auto-style7" OnClick="Button2_Click" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button7" runat="server" Text="Add to cart" CssClass="auto-style9" OnClick="Button2_Click" />
-        &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button8" runat="server" Text="Add to cart" CssClass="auto-style9" OnClick="Button2_Click" />
-            <asp:Button ID="Button9" runat="server" Text="Add to cart" CssClass="auto-style9" OnClick="Button2_Click" />
-        </p>
+                &nbsp;</p>
     </form>
     </form>
 

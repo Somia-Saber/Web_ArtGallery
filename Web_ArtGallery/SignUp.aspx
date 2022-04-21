@@ -392,8 +392,12 @@
      <ul>
         <li><a href="Home.aspx">Home</a>
         <li><a href="SignUp.aspx">SignUp</a> </li>
-        <li><a href="Login1.aspx">Login </a></li>
-        <li class="nav-right"><a href="login.html" class="active">Login</a></li>
+        <li><a href="Nature Paintings.aspx">Nature Paintings </a></li>
+         <li><a href=" Gradual Art Murals.aspx"> Gradual Art Murals </a></li>
+         <li><a href=" Eslamic Paintings.aspx"> Eslamic Paintings </a></li>
+         <li><a href="Design You Wish.aspx"> Design You Wish </a></li>
+            <li><a href="FeadBack.aspx">FeadBack</a></li>
+        <li class="nav-right"><a href="login.aspx" class="active">Login</a></li>
 
 
     </ul>

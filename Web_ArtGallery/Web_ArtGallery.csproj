@@ -71,13 +71,46 @@
     <Content Include="App_Data\ArtGallery_log.ldf">
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
+    <Content Include="Design You Wish.aspx" />
+    <Content Include="Eslamic Paintings.aspx" />
+    <Content Include="FeadBack.aspx" />
+    <Content Include="Gradual Art Murals.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Login.html" />
+    <Content Include="Nature Paintings.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Design You Wish.aspx.cs">
+      <DependentUpon>Design You Wish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design You Wish.aspx.designer.cs">
+      <DependentUpon>Design You Wish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eslamic Paintings.aspx.cs">
+      <DependentUpon>Eslamic Paintings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eslamic Paintings.aspx.designer.cs">
+      <DependentUpon>Eslamic Paintings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeadBack.aspx.cs">
+      <DependentUpon>FeadBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeadBack.aspx.designer.cs">
+      <DependentUpon>FeadBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gradual Art Murals.aspx.cs">
+      <DependentUpon>Gradual Art Murals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gradual Art Murals.aspx.designer.cs">
+      <DependentUpon>Gradual Art Murals.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,6 +124,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nature Paintings.aspx.cs">
+      <DependentUpon>Nature Paintings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nature Paintings.aspx.designer.cs">
+      <DependentUpon>Nature Paintings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
