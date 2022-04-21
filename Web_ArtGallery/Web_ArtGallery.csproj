@@ -72,6 +72,7 @@
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
     <Content Include="Home.html" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Login.html" />
@@ -80,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,6 +121,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PicProdact\" />
     <Folder Include="UserPic\" />
   </ItemGroup>
   <PropertyGroup>
