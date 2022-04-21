@@ -243,7 +243,7 @@
 
     <nav>
         <ul>
-            <li><a href="Home.html">Home</a>
+            <li><a href="Home.aspx">Home</a>
             <li><a href="SignUp.aspx">SignUp</a> </li>
             <li><a href="Login1.aspx">Login </a></li>
             <li class="nav-right"><a href="login.html" class="active">Login</a></li>
