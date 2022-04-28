@@ -199,11 +199,6 @@
             margin-left: 5px;
             margin-bottom: 0px;
         }
-        .auto-style2 {
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-        }
         .auto-style3 {
             width: 1455px;
             height: 103px;
@@ -215,12 +210,25 @@
             margin-left: 52px;
             margin-top: 0px;
         }
+        .auto-style6 {
+            height: 53px;
+            margin-left: 0px;
+        }
+        .auto-style2 {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .auto-style7 {
+            margin-left: 0px;
+        }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <ul>
-        <li><a href="Home.aspx">Home</a>
+    <ul class="auto-style6">
+        <li><asp:Image ID="Image2" runat="server" ImageUrl="Image2.jpeg" CssClass="auto-style2" Height="49px" Width="63px"/></li>
+        <li class="auto-style7"><a href="Home.aspx">Home</a>
         <li><a href="SignUp.aspx">SignUp</a> </li>
         <li><a href="Nature Paintings.aspx">Nature Paintings </a></li>
          <li><a href=" Gradual Art Murals.aspx"> Gradual Art Murals </a></li>
@@ -234,11 +242,13 @@
     </ul>
        <div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><div data-v-1fa55048="" class="container-fluid main-menu"><!----> <!----> <!----> <div data-v-1fa55048="" class="col-md-12 announcement-bar-new" style="background-color: rgb(255, 207, 62); color: rgb(28, 131, 113);"><div class="announcement-bar-text"><span>
                     ✔ الأسعار تشمل قيمة الضريبة المضافة 15% + تكلفة الشحن و التوصيل
-                </span> <span id="top-announcement-bar-close" class="announcement-bar-close"><span style="color: rgb(255, 255, 255) !important;">×</span></span></div></div> <div data-v-1fa55048="" class="d-md-none" style="display: block; width: 100%; height: 0px;"></div> <div data-v-1fa55048="" class="logo-bar" style="display: flex;"><!----> <a data-v-1fa55048="" href="/" class="flex-all-center router-link-exact-active router-link-active" id="header-store-logo">&nbsp;<b data-v-1fa55048="" class="store-name"><asp:Image ID="Image2" runat="server" ImageUrl="Image2.jpeg" CssClass="auto-style2" Height="67px" Width="88px"/>
-
-                </b></a>Art Gallery</div> 
+                </span> <span id="top-announcement-bar-close" class="announcement-bar-close"><span style="color: rgb(255, 255, 255) !important;">×</span></span></div>
+           </div>
+           <div data-v-1fa55048="" class="logo-bar" style="display: flex;"><!----> <a data-v-1fa55048="" href="/" class="flex-all-center router-link-exact-active router-link-active" id="header-store-logo">&nbsp;</a><br />
+               <asp:Image ID="Image8" runat="server" ImageUrl="art.jpg" Height="738px" Width="1695px" />
+           </div>
         </div>
-        <input data-v-1fa55048="" type="text" id="search" name="search" placeholder="ابحث في المتجر" autocomplete="off" class="auto-style4"><!----></div></div><div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><ul data-v-1fa55048="" id="menuHorizontalLinks" class="auto-style3"><li data-v-1fa55048="" class="item-home-page"><a data-v-1fa55048="" href="/" class="router-link-exact-active router-link-active"> الصفحة الرئيسية</a></li> <li data-v-1fa55048="" class="item-all-products"><a data-v-1fa55048="" href="/products" class="item-all-products">جميع المنتجات</a></li> <li data-v-1fa55048="" style="display: list-item;"><a data-v-1fa55048="" href="/categories/287498/لوحات-جدارية-بجميع-المقاسات" class="">
+        <input data-v-1fa55048="" type="text" id="search" name="search" placeholder="ابحث في المتجر" autocomplete="off" class="auto-style4"><!----></div></div><div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><ul data-v-1fa55048="" id="menuHorizontalLinks" class="auto-style3"><li data-v-1fa55048="" class="item-home-page"><a data-v-1fa55048="" href="/" class="router-link-exact-active router-link-active"> الصفحة الرئيسيةitem-all-products"><a data-v-1fa55048="" href="/products" class="item-all-products">جميع المنتجات</a></li> <li data-v-1fa55048="" style="display: list-item;"><a data-v-1fa55048="" href="/categories/287498/لوحات-جدارية-بجميع-المقاسات" class="">
                                 اختر حسب المقاس
                                 <span data-v-1fa55048="">&nbsp;<i data-v-1fa55048="" class="icon-caret-circle-down-primary"></i></span></a> <span data-v-1fa55048="" class="fix-border-top"></span> <div data-v-1fa55048="" class="second-level-menu-div" style="height: 427px;"><ul data-v-1fa55048="" class="second-level-menu"><li data-v-1fa55048=""><a data-v-1fa55048="" href="/categories/346409/لوحات-جدارية-صغيرة" class="">
                                         لوحات جدارية صغيرة
