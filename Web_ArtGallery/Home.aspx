@@ -222,6 +222,10 @@
         .auto-style7 {
             margin-left: 0px;
         }
+        .auto-style8 {
+            float: right;
+            width: 74px;
+        }
         </style>
 </head>
 <body>
@@ -237,7 +241,7 @@
          <li><a href="FeadBack.aspx">FeadBack</a></li>
 
         
-        <li class="nav-right"><a href="login.aspx" class="active">Login</a></li>
+        <li class="auto-style8"><a href="login.aspx" class="active">Login</a></li>
 
     </ul>
        <div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><div data-v-1fa55048="" class="container-fluid main-menu"><!----> <!----> <!----> <div data-v-1fa55048="" class="col-md-12 announcement-bar-new" style="background-color: rgb(255, 207, 62); color: rgb(28, 131, 113);"><div class="announcement-bar-text"><span>
@@ -245,10 +249,10 @@
                 </span> <span id="top-announcement-bar-close" class="announcement-bar-close"><span style="color: rgb(255, 255, 255) !important;">×</span></span></div>
            </div>
            <div data-v-1fa55048="" class="logo-bar" style="display: flex;"><!----> <a data-v-1fa55048="" href="/" class="flex-all-center router-link-exact-active router-link-active" id="header-store-logo">&nbsp;</a><br />
-               <asp:Image ID="Image8" runat="server" ImageUrl="art.jpg" Height="738px" Width="1695px" />
+               <asp:Image ID="Image8" runat="server" ImageUrl="art.jpg" Height="619px" Width="1695px" />
            </div>
         </div>
-        <input data-v-1fa55048="" type="text" id="search" name="search" placeholder="ابحث في المتجر" autocomplete="off" class="auto-style4"><!----></div></div><div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><ul data-v-1fa55048="" id="menuHorizontalLinks" class="auto-style3"><li data-v-1fa55048="" class="item-home-page"><a data-v-1fa55048="" href="/" class="router-link-exact-active router-link-active"> الصفحة الرئيسيةitem-all-products"><a data-v-1fa55048="" href="/products" class="item-all-products">جميع المنتجات</a></li> <li data-v-1fa55048="" style="display: list-item;"><a data-v-1fa55048="" href="/categories/287498/لوحات-جدارية-بجميع-المقاسات" class="">
+        <input data-v-1fa55048="" type="text" id="search" name="search" placeholder="ابحث في المتجر" autocomplete="off" class="auto-style4"><!----></div></div><div data-v-1fa55048="" id="top-horizontal-menu" class="col-md-12 webmenu z-header-main-menu" style="overflow: visible;"><div data-v-1fa55048="" class="webmenu-main"><div data-v-1fa55048="" id="primary_nav_wrap"><ul data-v-1fa55048="" id="menuHorizontalLinks" class="auto-style3"><li data-v-1fa55048="" class="item-home-page"><a data-v-1fa55048="" href="/" class="router-link-exact-active router-link-active"> الصفحة الرئيسية<a data-v-1fa55048="" href="/products" class="item-all-products">جميع المنتجات</a></li> <li data-v-1fa55048="" style="display: list-item;"><a data-v-1fa55048="" href="/categories/287498/لوحات-جدارية-بجميع-المقاسات" class="">
                                 اختر حسب المقاس
                                 <span data-v-1fa55048="">&nbsp;<i data-v-1fa55048="" class="icon-caret-circle-down-primary"></i></span></a> <span data-v-1fa55048="" class="fix-border-top"></span> <div data-v-1fa55048="" class="second-level-menu-div" style="height: 427px;"><ul data-v-1fa55048="" class="second-level-menu"><li data-v-1fa55048=""><a data-v-1fa55048="" href="/categories/346409/لوحات-جدارية-صغيرة" class="">
                                         لوحات جدارية صغيرة

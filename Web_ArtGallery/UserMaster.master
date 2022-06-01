@@ -1,0 +1,256 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server" style="horizontal-align: top; vertical-align: top;">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        /*Master Page var Style*/
+        ul {
+            list-style-type: none;
+            border: 1px solid #a7a7a7;
+            background-color: #ffffff;
+            overflow: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            border: 1px solid #a7a7a7;
+            background-color: #ffffff;
+            overflow: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a.active {
+            background-color: deeppink;
+            color: white;
+        }
+
+        
+            
+          
+        li a.active {
+            background-color: deeppink;
+            color: white;
+        }
+
+        
+            
+          
+        li a {
+            display: block;
+            color: #666;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+            li a {
+            display: block;
+            color: #666;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+            a {
+            text-decoration: none;
+            color: #008CBA;
+        }
+
+            a {
+            text-decoration: none;
+            color: #008CBA;
+        }
+
+        .auto-style1 {
+            width: 96%;
+            height: 373px;
+            margin-right: 0px;
+        }
+        
+        .auto-style2 {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+            margin: 15px;
+        }
+
+        .auto-style3 {
+            height: 61px;
+            width: 1169px;
+        }
+        .auto-style4 {
+            width: 1215px;
+            height: 61px;
+            margin-top: 0px;
+        }
+        .auto-style6 {
+            width: 1169px;
+        }
+        .auto-style8 {
+            height: 72px;
+            width: 1215px;
+            margin-bottom: 0px;
+        }
+
+        .auto-style10 {
+            width: 105px;
+            height: 74px;
+        }
+        .auto-style14 {
+            height: 31px;
+            margin-left: 0px;
+        }
+        .auto-style15 {
+            width: 185px;
+            height: 59px;
+        }
+        .auto-style20 {
+            width: 104px;
+            height: 59px;
+        }
+        /*        Gradual article Style*/
+
+ .banner {
+    width: 100%;
+    height: 100vh;
+    /background-color:antiquewhite;/
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(mint.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbarr {
+    /width: 85px;/
+     /float: right;/
+    margin: auto;
+   
+    padding:0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /justify-content: space-evenly;/
+    
+    
+    
+}
+.webart {
+    width: 100px;
+    cursor: pointer;
+}
+.navbarr ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; /relative to (ul li:after) to make underline below home artwork..../
+}
+
+.navbarr ul li a {
+        text-decoration: none;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+.navbarr ul li::after {
+        content: '';
+        height: 3px;
+        width: 0%; /To hide the line/
+        background: #e88ec1;
+        position: absolute;
+        left: 0;
+        bottom: -10px; /to make the line a little down/
+        transition: 0.5s; /the speed of the line movement/
+    }
+
+.navbarr ul li:hover::after {
+        width: 100%; /make the line move from left to right when the mouth moves on it/
+    }
+
+
+         .auto-style30 {
+            width: 104%;
+            height: 352px;
+            display: block;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+    <ul class="auto-style8">
+        <li class="auto-style10"><asp:Image ID="Image2" runat="server" ImageUrl="webart2.png" CssClass="auto-style2" Height="80px" Width="92px"/></li>
+
+
+    </ul>
+    <ul class="auto-style4">
+        <li class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+        <li class="auto-style15"><a href="Home.aspx" class="auto-style14">Home</a>
+        <li class="auto-style15"><a href="SignUp.aspx" class="auto-style14">SignUp</a> </li>
+        <li class="auto-style15"><a href="Nature Paintings.aspx" class="auto-style14">Nature Paintings </a></li>
+         <li class="auto-style15"><a href=" Gradual Art Murals.aspx" class="auto-style14"> Gradual Art Murals </a></li>
+         <li class="auto-style15"><a href=" Eslamic Paintings.aspx" class="auto-style14"> Islamic Paintings </a></li>
+         <li class="auto-style15"><a href="FeadBack.aspx" class="auto-style14">FeadBack</a></li>
+
+        
+    </ul>
+       
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p class="auto-style30">
+
+                </p>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
